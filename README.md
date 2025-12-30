@@ -11,20 +11,14 @@ The BankAccount class represents a basic bank account system. It allows users to
 
 Features
 Private fields for account holder and balance
-
 Constructor to initialize account details
-
 Read-only property for balance
-
 Deposit and withdrawal methods with validation
-
 Method to display account information
 
 OOP Concepts Used
 Encapsulation
-
 Data hiding
-
 Validation through methods
 
 🟢 Program 2: Employee (Employee.cs)
@@ -33,20 +27,14 @@ The Employee class manages employee details such as name, age, and salary. It us
 
 Features
 Private fields for employee data
-
 Constructor for initialization
-
 Getter and setter properties
-
 Salary validation to prevent negative values
-
 Method to display employee details
 
 OOP Concepts Used
 Encapsulation
-
 Properties (get/set)
-
 Exception handling
 
 🟢 Program 3: Product 
@@ -55,15 +43,12 @@ The Product class represents a product in an inventory system. It manages produc
 
 Features
 Private fields for product details
-Features
-
-Private fields for product details
-
 Constructor for initialization
-
 Read-only product name
-
 Validation for quantity and price
-
 Method to display product information
 
+OOP Concepts Used
+Encapsulation
+Data validation
+Properties
