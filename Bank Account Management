@@ -1,0 +1,47 @@
+// BankAccount.cs
+public class BankAccount
+{
+    // Private fields
+    private decimal balance;
+    private string accountHolder;
+
+    // Constructor
+    public BankAccount(string accountHolder, decimal initialBalance)
+    {
+        this.accountHolder = accountHolder;
+        this.balance = initialBalance;
+    }
+
+    // Public property for balance (Read-only outside the class)
+    public decimal Balance
+    {
+        get { return balance; }
+    }
+
+    // Public method for depositing money
+    public void Deposit(decimal amount)
+    {
+        if (amount > 0)
+        {
+            balance += amount;
+        }
+    }
+
+    // Public method for withdrawing money
+    public bool Withdraw(decimal amount)
+    {
+        if (amount > 0 && amount <= balance)
+        {
+            balance -= amount;
+            return true;
+        }
+        return false;
+    }
+
+    // Public method for showing account details
+    public void DisplayAccountInfo()
+    {
+        Console.WriteLine($"Account Holder: {accountHolder}");
+        Console.WriteLine($"Current Balance: {balance:C}");
+    }
+}
