@@ -1,0 +1,41 @@
+// Product.cs
+public class Product
+{
+    private string productName;
+    private int quantity;
+    private double price;
+
+    // Constructor
+    public Product(string productName, int quantity, double price)
+    {
+        this.productName = productName;
+        this.quantity = quantity;
+        this.price = price;
+    }
+
+    // Properties to access private fields
+    public string ProductName
+    {
+        get { return productName; }
+    }
+
+    public int Quantity
+    {
+        get { return quantity; }
+        set { quantity = value >= 0 ? value : 0; }
+    }
+
+    public double Price
+    {
+        get { return price; }
+        set { price = value >= 0 ? value : 0; }
+    }
+
+    // Method to display product information
+    public void DisplayProductInfo()
+    {
+        Console.WriteLine($"Product Name: {productName}");
+        Console.WriteLine($"Quantity: {quantity}");
+        Console.WriteLine($"Price per unit: {price:C}");
+    }
+}
