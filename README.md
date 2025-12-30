@@ -1,4 +1,4 @@
-# Encapsulation-C-
+# Encapsulation-Csharp
 This repository contains three simple C# programs that demonstrate Object-Oriented Programming (OOP) concepts such as encapsulation, constructors, properties, and data validation. These programs are suitable for beginners and academic practice.
 
 📌 Programs Included
